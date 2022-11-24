@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+  <div>
+    <label for="brand">Car Brand</label>
+    <input name="brand" id="brand" value="Ex: Volvo" />
+  </div>
+  <div>
+    <label for="model">Car Model</label>
+    <input name="model" id="model" value="Ex: S90" />
+  </div>
+  <div>
+    <label for="seats">Available seats</label>
+    <input name="seats" id="seats" value="Ex: 5" />
+  </div>
+  <div>
+    <label for="type">Car type</label>
+    <select id="type" name="type">
+        <option value="Basic" selected>Basic</option>
+        <option value="Comfort">Comfort</option>
+        <option value="Premium"> Premium</option>
+    </select>
+  </div>
+  <div>
+    <label for="city">City</label>
+    <input name="city" id="city" value="Ex: Kyiv" />
+  </div>
+  <div>
+    <label for="district">District</label>
+    <input name="district" id="district" value="Ex: Troezhchyna" />
+  </div>
+  <div>
+    <label for="street">Street</label>
+    <input name="street" id="street" value="Starokyivska" />
+  </div>
+  <div>
+      <button>Add car to database</button>
+  </div>
+</form>
+</body>
+</html>
